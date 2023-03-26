@@ -36,6 +36,7 @@ body {
     font-weight: 600;
     outline: none;
     z-index: 5;
+    transition: 100ms;
 }
 
 .black,
@@ -53,14 +54,16 @@ body {
     height: 250px;
     top: 0;
     z-index: 10;
+    transition: 100ms;
 }
 
 .playing,
-.keys:active,
-.black:active {
+.keys:focus:active,
+.black:focus:active {
     transform: scale(.94);
     border: 1px solid black;
     box-shadow: 0 0 1rem #fff;
+    transition: 90ms;
 }
 
 #key {
