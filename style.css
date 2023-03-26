@@ -36,7 +36,7 @@ body {
     font-weight: 600;
     outline: none;
     z-index: 5;
-    transition: 100ms;
+    transition: 90ms;
 }
 
 .black,
@@ -54,7 +54,7 @@ body {
     height: 250px;
     top: 0;
     z-index: 10;
-    transition: 100ms;
+    transition: 90ms;
 }
 
 .playing,
