@@ -5,15 +5,19 @@ document.addEventListener("keydown", (e) => {
     button.classList.add("playing");
     audio.currentTime = 0;
     audio.play();
-    myFunc1(button)
+    myFunc2(button)
 });
-function myFunc1(btn) {
+function myFunc2(btn) {
     setTimeout(() => {
         btn.classList.remove("playing");
-    }, 100)
+    }, 90)
 }
-function myFunc2(num) {
+function myFunc1(num) {
+    let button = document.querySelector(`button[data-id="${num}"]`);
+    if (!button) { return };
+    button.classList.add("playing");
     let audio = document.querySelector(`audio[data-id="${num}"]`);
     audio.currentTime = 0;
     audio.play();
+    myFunc2(button)
 }
